@@ -11,6 +11,7 @@ import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import Users from "./Pages/Users";
 import UserDetails from "./Pages/UserDetails";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -22,13 +23,14 @@ function App() {
           <Route path="/users/list?" element={<Users />} />
           <Route path="/users/:id/:name?" element={<UserDetails />} />
 
-          <Route path="IN">
-            <Route path="/IN/user">
-              <Route path="/IN/user/listing" element={<Listing />} />
-              <Route path="/IN/user/login" element={<Login />} />
+          
+            
+              <Route path="/listing" element={<Listing />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
             </Route>
-          </Route>
-        </Route>
+          
+        
 
         <Route path="/pages" element={<Pages />}>
           <Route index element={<AboutUs />} />
