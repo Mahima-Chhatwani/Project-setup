@@ -165,118 +165,117 @@
 
 
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-const Home=()=>{
-  return(
- <main className="bg-white text-gray-900">
-  
-  {/* Hero Section */}
- 
- <section className="bg-gradient-to-r from-yellow-400 to-yellow-300 py-16 px-4 text-center">
+const Home = () => {
+  return (
+    <main className="bg-white text-gray-900">
+      {/* Hero Section */}
 
-  <div className="max-w-4xl max-auto">
-    <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-      Find Your Perfect Ride
-    </h1>
+      <section className="bg-gradient-to-r from-yellow-400 to-yellow-300 py-16 px-4 text-center">
+        <div className="max-w-4xl max-auto">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+            Find Your Perfect Ride
+          </h1>
 
-    <p className="text-lg md:text-xl mb-6">
-     Rent Top-rated cars at affordable prices with 24x7 customer support.
-    </p>
-    <Link 
-    to="/listingdetails"
-    className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
-      Explore Cars
-    </Link>
-  </div>
- </section>
+          <p className="text-lg md:text-xl mb-6">
+            Rent Top-rated cars at affordable prices with 24x7 customer support.
+          </p>
+          <Link
+            to="/listingdetails"
+            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+          >
+            Explore Cars
+          </Link>
+        </div>
+      </section>
 
- {/* Search Form */}
+      {/* Search Form */}
 
-<section className="py-10 px-4 bg-gray-100">
-  <div className="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-md">
-    <h2 className="text-xl font-semibold mb-4">
-      Search Rental Cars
-    </h2>
-    <div className="grid md:grid-cols-4 gap-4">
-      <input
-      type="text"
-      placeholder="Location"
-      className="border px-4 py-2 rounded w-full"/>
+      <section className="py-10 px-4 bg-gray-100">
+        <div className="max-w-4xl mx-auto bg-white p-4 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold mb-4">Search Rental Cars</h2>
+          <div className="grid md:grid-cols-5 gap-5">
+            <input
+              type="text"
+              placeholder="Pickup Location"
+              className="border px-4 py-2 rounded w-full"
+            />
 
-      <input 
-      type="date"
-      placeholder="pickup Date"
-      className="border px-4 py-2 rounded w-full"/>
+            <input
+              type="text"
+              placeholder="Drop Location"
+              className="border px-4 py-2 rounded w-full"
+            />
 
-      <input
-      type="date"
-      placeholder="Drop Date"
-      className="border px-4 py-2 rounded w-full"/>
+            <input
+              type="date"
+              placeholder="pickup Date"
+              className="border px-4 py-2 rounded w-full"
+            />
 
-      <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded">
-        Search
-      </button>
-    </div>
-  </div>
-</section>
+            <input
+              type="date"
+              placeholder="Drop Date"
+              className="border px-4 py-2 rounded w-full"
+            />
 
-{/* Features */}
+            <button className="flex h-20 w-20 items-center justify-center rounded-full bg-yellow-400  hover:bg-yellow-500 font-semibold text-black">
+              <Link to="/listingdetails"> Search</Link>
+            </button>
+          </div>
+        </div>
+      </section>
 
-<section className="py-14 px-4">
-  <div className="max-w-6xl mx-auto text-center">
+      {/* Features */}
 
-<h2 className="text-3xl font-bold mb-10">
-  Why Choose Quent?
-</h2>
+      <section className="py-14 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-10">Why Choose Quent?</h2>
 
-<div className="grid md:grid-cols-3 gap-8">
-  <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
-    <h3 className="text-xl font-semibold mb-2" >
-      Wide Range of Cars
-    </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-2">Wide Range of Cars</h3>
 
-    <p>
-      Choose from economy to luxury cars as per your Trip and Budget
-    </p>
-  </div>
-  <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
-    <h3 className="text-xl font-semibold mb-2">
-      Easy Bookings
-    </h3>
-    <p>Book your Rides easily in just a click with real-time availability</p>
-    
-  </div>
-<div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
-   <h3 className="text-xl font-semibold mb-2">
-    24x7 support
-   </h3>
-   <p>Our support team is here round-the-clock to assist you anytime</p>
-</div>
-</div>
-  </div>
-</section>
+              <p>
+                Choose from economy to luxury cars as per your Trip and Budget
+              </p>
+            </div>
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-2">Easy Bookings</h3>
+              <p>
+                Book your Rides easily in just a click with real-time
+                availability
+              </p>
+            </div>
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-2">24x7 support</h3>
+              <p>
+                Our support team is here round-the-clock to assist you anytime
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-{/* CTA */}
+      {/* CTA */}
 
-<section className="bg-black text-white py-14 text-center">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-bold mb-4">
-       Ready for your next adventure
-    </h2>
-   <p className="mb-6">
-      Book a car with quent and travel worry-free
-   </p>
-   <Link 
-   to="/listinggrid"
-   className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded" >
-    Book Now
-   </Link>
-  </div>
-</section>
- 
- </main>
-  )
-}
+      <section className="bg-black text-white py-14 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready for your next adventure
+          </h2>
+          <p className="mb-6">Book a car with quent and travel worry-free</p>
+          <Link
+            to="/listinggrid"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded"
+          >
+            Book Now
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+};
 
-export default Home
+export default Home;
