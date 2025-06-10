@@ -329,6 +329,25 @@ function NavBar() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+             height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+               strokeLinecap="round"
+               strokeLinejoin="round"
+              className="lucide lucide-car-front-icon lucide-car-front"
+            >
+              <path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8" />
+              <path d="M7 14h.01" />
+               <path d="M17 14h.01" />
+               <rect width="18" height="8" x="3" y="10" rx="2" />
+              <path d="M5 18v2" />
+              <path d="M19 18v2" />
+             </svg>
             <h1 className="text-xl font-bold">
               <span className="text-yellow-500">Quent</span>
             </h1>
@@ -357,7 +376,7 @@ function NavBar() {
                 onMouseEnter={() => setOpenDropdown(key)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button className="hover:text-yellow-400 flex items-center gap-1">
+                <button className=" hover:text-yellow-400 flex items-center gap-1">
                   {label}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -432,5 +451,3 @@ function NavBar() {
 
 export default NavBar;
 
-
-// renderDropdown(key)
