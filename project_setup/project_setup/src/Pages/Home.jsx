@@ -16,11 +16,12 @@ import rentstepscarImg from "@/images/rentstepscar.png"
 import suzukiImg from "@/images/suzuki.png"
 
 
+
 const Home = () => {
   return (
     <main className="bg-white text-gray-900">
       {/* Hero Section */}
-<section className="bg-gradient-to-r from-gray-800 to-yellow-300 py-16 px-4">
+       <section className="bg-gradient-to-r from-gray-800 to-yellow-300 py-16 px-4">
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
     {/* Left Content */}
     <div className="text-center md:text-left">
@@ -31,7 +32,7 @@ const Home = () => {
         Rent top-rated cars at affordable prices with 24x7 customer support.
       </p>
       <Link
-        to="/listing-grid"
+        to="/listinggrid"
         className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
       >
         Explore Cars
@@ -481,6 +482,116 @@ const Home = () => {
 
         </div>
        </section>
+
+
+       {/* Pricing Section */}
+       <section className="py-16 px-4 bg-gray-100">
+       <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-2"> 
+         ✨Best Pricing in Rental✨
+        </h2>
+        <p className="text-gray-600 mb-8">
+         Choose the Right Plan for Your Business
+        </p>
+        <div className="grid md:grid-cols-4 gap-8">
+        {/* Starter Plan */}
+         <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+         <h3 className="text-lg font-bold mb-2">
+          Starter
+         </h3>
+         <div className="text-2xl font-bold mb-1.5">
+          20,000₹
+         </div>
+         <p className="text-sm mb-4">
+          Per Month 
+          <span className="ml-2 text-red-500 font-semibold">30% Offer</span>
+         </p>
+         <ul className="text-sm ">
+          <li>💫 50% Downpayment </li>
+          <li>💫 Insaurance Not Included </li>
+          <li>💫 Doorstep Not Included </li>
+          <li>💫 Roadside Assistance </li>
+          <li>💫 Minimal Insurance Coverage </li>
+          <li>💫 Additional Perks - GPS </li>
+          <li>💫 No Flexible timing & extension </li>
+         </ul>
+         <button className="w-full bg-black text-white hover:bg-gray-400 transition rounded py-1">Choose Plan ➡</button>
+
+         </div>
+
+         {/* Premium Plan */}
+         <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+         <h3 className="text-lg font-bold mb-2">
+          Premium
+         </h3>
+         <div className="text-2xl font-bold mb-1.5">
+          50,000₹
+         </div>
+         <p className="text-sm mb-4">
+          Per Month 
+          <span className="ml-2 text-green-500 font-semibold">50% Offer</span>
+         </p>
+         <ul className="text-sm ">
+          <li>💫 25% Downpayment </li>
+          <li>💫 25% Downpayment </li>
+          <li>💫 Doorstep Delivery Available </li>
+          <li>💫 Roadside Assistance </li>
+          <li>💫 Personal Injury Protection </li>
+          <li>💫 Additional Perks GPS, Car Seat </li>
+          <li>💫 Flexible timing & extension </li>
+         </ul>
+         <button className="w-full bg-black text-white hover:bg-gray-400 transition rounded py-1">Choose Plan ➡</button>
+
+         </div>
+
+         {/* Enterprise Plan */}
+           <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+         <h3 className="text-lg font-bold mb-2">
+          Enterprise
+         </h3>
+         <div className="text-2xl font-bold mb-1.5">
+          1,00,000₹
+         </div>
+         <p className="text-sm mb-4">
+          Per Month 
+         </p>
+         <ul className="text-sm ">
+          <li>💫 0% Downpayment </li>
+          <li>💫 Insurance Included </li>
+          <li>💫 Doorstep Delivery Available </li>
+          <li>💫 Roadside Assistance </li>
+          <li>💫 Personal Injury Protection </li>
+          <li>💫 Additional Perks GPS, Car Seat </li>
+          <li>💫 Flexible timing & extension </li>
+         </ul>
+         <button className="w-full bg-black text-white hover:bg-gray-400 transition rounded py-1">Choose Plan ➡</button>
+
+         </div>
+
+         {/* Custom Plan */}
+         <div className="bg-green-500 text-white rounded-lg shadow-lg p-6 text-left">
+          <h3 className=" text-lg font-bold mb-2">
+           Custom
+          </h3>
+            <p className="text-3xl font-bold mb-4">Contact Us</p>
+            <ul className="text-sm space-y-1 mb-4">
+              <li>✔ Weekend/Weekly Deals </li>
+              <li>✔ Membership Discounts </li>
+              <li>✔ Insurance Upgrades </li>
+              <li>✔ Personal Accident Insurance </li>
+              <li>✔ Minimal Insurance Coverage </li>
+              <li>✔ No Long term Commitment </li>
+              <li>✔ Refundable Deposit </li>
+              <li>✔ Priority Service </li>
+            </ul>
+            <Link to="/login" className="block">
+            <button className="w-full bg-white text-black hover:bg-gray-400 transition rounded py-1">Choose Plan ➡</button>
+            </Link>
+         </div>
+        </div>
+       </div>
+       </section>
+
 
       {/* Features */}
 

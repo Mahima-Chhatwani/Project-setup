@@ -20,15 +20,22 @@ import ListingGrid from "./Pages/ListingGrid";
 import ListingDetails from "./Pages/ListingDetails";
 import BlogGrid from "./Pages/BlogGrid";
 import BlogDetails from "./Pages/BlogDetails";
+import Footer from "./Pages/Footer";
+import MainLayout from "./Layout/mainLayout";
 
 function App() {
   return (
     <>
       {/* <NavBar/> */}
       
+      
       <Routes>
+        <Route path="/test" element={<MainLayout/>}>
+          <Route index element={<Home />} />
+        </Route>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
+          {/* <Route path="/footer" element={<Footer/>}/> */}
           {/* <Route path="/listing" element={<Listing />} /> */}
           {/* <Route path="/blog" element= {<Blog/>}/> */}
           {/* <Route path="/dashboard" element={<Dashboard/>}/> */}
@@ -37,6 +44,7 @@ function App() {
           <Route path="/users/:id/:name?" element={<UserDetails />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          
           {/* Dashboard Dropdown */}
           <Route path="userdashboard" element={<UserDashboard/>}/>
           <Route path="admindashboard" element={<AdminDashboard/>}/>
@@ -50,17 +58,24 @@ function App() {
           {/* Blog Dropdown */}
           <Route path="bloggrid" element={<BlogGrid/>}/>
           <Route path="blogdetails" element={<BlogDetails/>}/>
+
+          
          
           {/* <Route path="/*" element={<Navigate to="/"/>}/> */}
         <Route path="/*" element={<NotFound />} />
          </Route>
       </Routes>
+        <Footer/>
       
     </>
   );
 }
 
 export default App;
+
+
+
+
     
               
               
