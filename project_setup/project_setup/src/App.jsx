@@ -22,6 +22,10 @@ import BlogGrid from "./Pages/BlogGrid";
 import BlogDetails from "./Pages/BlogDetails";
 import Footer from "./Pages/Footer";
 import MainLayout from "./Layout/mainLayout";
+import FAQ from "./Pages/FAQ";
+import RefundPolicy from "./Pages/RefundPolicy";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsConditions from "./Pages/TermsConditions";
 
 function App() {
   return (
@@ -44,6 +48,10 @@ function App() {
           <Route path="/users/:id/:name?" element={<UserDetails />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="/faq" element={< FAQ />}/>
+          <Route path="/refundpolicy" element={< RefundPolicy />} />
+          <Route path="/privacypolicy" element={< PrivacyPolicy/>} />
+          <Route path="/termsconditions" element={< TermsConditions/>}/>
           
           {/* Dashboard Dropdown */}
           <Route path="userdashboard" element={<UserDashboard/>}/>

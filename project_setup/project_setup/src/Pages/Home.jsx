@@ -592,7 +592,30 @@ const Home = () => {
        </div>
        </section>
 
+       {/* Marquee */}
 
+       <div className="overflow-x-hidden whitespace-nowrap bg-black px-3 py-5">
+      <p
+        className="inline-block  text-white font-bold text-3xl"
+        style={{
+          animation: " marquee 30s linear infinite, linear infinite",
+        }}
+      >
+        ⭐Free Cncellation⭐Trusted Proof⭐Best Rate Gaurantee⭐Best Security⭐Latest Update of Cars⭐Best Rental Services⭐Custom Services Available⭐
+      </p>
+
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+
+        @keyframes blinker {
+          50% { opacity: 0; }
+        }
+        
+      `}</style>
+    </div>
       {/* Features */}
 
       <section className="py-14 px-4">
