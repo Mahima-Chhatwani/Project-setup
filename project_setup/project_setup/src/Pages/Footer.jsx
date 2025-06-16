@@ -142,7 +142,7 @@ const Footer = () => {
             </li>
             <li className="hover:text-white">
               {" "}
-              <Link to="/">Testimonials</Link>
+              <Link to="/testimonials">Testimonials</Link>
             </li>
             <li className="hover:text-white">
               <Link to="/contact">Contact Us</Link>
@@ -153,7 +153,7 @@ const Footer = () => {
 
       <div className="mt-10 pt-6 border-t border-gray-700 flex flex-col  items-center  text-sm text-gray-400 ">
         <p className="hover:text-white">
-          Copyright © 2025 Dreams Rent. All Rights Reserved.
+          Copyright © 2025 Quent. All Rights Reserved.
         </p>
         <div className="flex gap-3 mt-4 md:mt-0">
           <Link to="/privacypolicy" className="hover:text-white">
