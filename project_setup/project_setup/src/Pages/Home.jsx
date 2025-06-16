@@ -98,7 +98,7 @@ const Home = () => {
           <p className="text-gray-600 mb-8">
             Know what you’re looking for? Browse our extensive selection of cars
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 ">
             {[
               {
                 label: "sportscoupe",
@@ -160,13 +160,13 @@ const Home = () => {
 
       {/* Best Platform Section */}
       <section className="py-14 px-4 bg-gray-100">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10 ">
           {/* Car Image */}
           <div className="flex-1">
             <img
               src={sedanImg}
               alt="Best Platform Selection"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg hover:-translate-y-2 hover:scale-105"
             />
           </div>
 
@@ -380,7 +380,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img src={rentstepscarImg} 
           alt="Car Rental Steps"
-          className="w-full max-w-lg mx-auto md:mx-0"
+          className="w-full max-w-lg mx-auto md:mx-0 hover:-translate-y-2 hover:scale-105"
           />
           {/* Steps */}
           <div>
@@ -486,7 +486,7 @@ const Home = () => {
 
        {/* Pricing Section */}
        <section className="py-16 px-4 bg-gray-100">
-       <div className="max-w-6xl mx-auto text-center">
+       <div className="max-w-6xl mx-auto text-center ">
         <h2 className="text-3xl font-bold mb-2"> 
          ✨Best Pricing in Rental✨
         </h2>
@@ -495,7 +495,7 @@ const Home = () => {
         </p>
         <div className="grid md:grid-cols-4 gap-8">
         {/* Starter Plan */}
-         <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+         <div className="bg-white border rounded-lg shadow-lg p-6 text-left hover:-translate-y-2 hover:scale-105">
          <h3 className="text-lg font-bold mb-2">
           Starter
          </h3>
@@ -520,7 +520,7 @@ const Home = () => {
          </div>
 
          {/* Premium Plan */}
-         <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+         <div className="bg-white border rounded-lg shadow-lg p-6 text-left hover:-translate-y-2 hover:scale-105">
          <h3 className="text-lg font-bold mb-2">
           Premium
          </h3>
@@ -545,7 +545,7 @@ const Home = () => {
          </div>
 
          {/* Enterprise Plan */}
-           <div className="bg-white border rounded-lg shadow-lg p-6 text-left">
+           <div className="bg-white border rounded-lg shadow-lg p-6 text-left hover:-translate-y-2 hover:scale-105">
          <h3 className="text-lg font-bold mb-2">
           Enterprise
          </h3>
@@ -569,7 +569,7 @@ const Home = () => {
          </div>
 
          {/* Custom Plan */}
-         <div className="bg-green-500 text-white rounded-lg shadow-lg p-6 text-left">
+         <div className="bg-green-500 text-white rounded-lg shadow-lg p-6 text-left hover:-translate-y-2 hover:scale-105">
           <h3 className=" text-lg font-bold mb-2">
            Custom
           </h3>
@@ -623,21 +623,21 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-10">Why Choose Quent?</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition hover:-translate-y-2 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">Wide Range of Cars</h3>
 
               <p>
                 Choose from economy to luxury cars as per your Trip and Budget
               </p>
             </div>
-            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition hover:-translate-y-2 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">Easy Bookings</h3>
               <p>
                 Book your Rides easily in just a click with real-time
                 availability
               </p>
             </div>
-            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+            <div className="p-6 border rounded-lg shadow hover:shadow-lg transition hover:-translate-y-2 hover:scale-105">
               <h3 className="text-xl font-semibold mb-2">24x7 support</h3>
               <p>
                 Our support team is here round-the-clock to assist you anytime
