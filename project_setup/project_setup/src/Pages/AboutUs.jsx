@@ -1,8 +1,9 @@
 import React from "react";
 import ourcompanyImg from "@/images/ourcompany.png";
-import { MapPin, CalendarCheck2, Car } from "lucide-react";
+import { MapPin, CalendarCheck2, Car, MoveIcon, CrownIcon, UserCheckIcon } from "lucide-react";
 
 const AboutUs = () => {
+    
   return (
     <>
       <main className="bg-white text-gray-900">
@@ -173,50 +174,259 @@ const AboutUs = () => {
 
         {/* Facts by the Numbers */}
         <section className="bg-black text-white py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-2">Facts by the Numbers</h2>
-          <p className="text-gray-300 mb-10">
-          Trusted by thousands, driven across millions of kilometers — here's what drives Quent forward.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {/* Item 1 */}
-            <div className="bg-white text-black p-6 rounded-lg shadow text-center">
-              <div className="text-3xl mb-2">❤️</div>
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-2">Facts by the Numbers</h2>
+            <p className="text-gray-300 mb-10">
+              Trusted by thousands, driven across millions of kilometers —
+              here's what drives Quent forward.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {/* Item 1 */}
+              <div className="bg-white text-black p-6 rounded-lg shadow text-center">
+                <div className="text-3xl mb-2">❤️</div>
                 <h3 className="text-2xl font-bold">16k+</h3>
                 <p className="text-sm text-gray-500 font-semibold">
-                 Happy Customers
+                  Happy Customers
                 </p>
-            </div>
-            {/* Item 2 */}
-            <div className="bg-white text-black p-6 rounded-lg shadow text-center">
-              <div className="text-3xl mb-2">🚗</div>
-              <h3 className="text-2xl font-bold">
-                2547+
-              </h3>
-              <p className="text-sm text-gray-500 font-semibold">
-                Count of Cars
-              </p>
-            </div>
+              </div>
+              {/* Item 2 */}
+              <div className="bg-white text-black p-6 rounded-lg shadow text-center">
+                <div className="text-3xl mb-2">🚗</div>
+                <h3 className="text-2xl font-bold">2547+</h3>
+                <p className="text-sm text-gray-500 font-semibold">
+                  Count of Cars
+                </p>
+              </div>
 
-            {/* Item 3 */}
-            <div className="bg-white text-black p-6 rounded-lg shadow text-center"> 
-              <div className="text-3xl mb-2">🔐</div>
-              <h3 className="text-2xl font-bold">625k+</h3>
-              <p className="text-sm text-gray-500 font-semibold">Car center Solutions</p>
-            </div>
+              {/* Item 3 */}
+              <div className="bg-white text-black p-6 rounded-lg shadow text-center">
+                <div className="text-3xl mb-2">🔐</div>
+                <h3 className="text-2xl font-bold">625k+</h3>
+                <p className="text-sm text-gray-500 font-semibold">
+                  Car center Solutions
+                </p>
+              </div>
 
-            {/* Item 4 */}
-            <div className="bg-white text-black p-6 rounded-lg shadow text-center">
-              <div className="text-3xl mb-2">⏱️</div>
-              <h3 className="text-2xl font-bold">
-               200k+
-              </h3>
-              <p className="text-sm text-gray-500 font-semibold">
-               Total Kilometer
-              </p>
+              {/* Item 4 */}
+              <div className="bg-white text-black p-6 rounded-lg shadow text-center">
+                <div className="text-3xl mb-2">⏱️</div>
+                <h3 className="text-2xl font-bold">200k+</h3>
+                <p className="text-sm text-gray-500 font-semibold">
+                  Total Kilometer
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-16 bg-white text-center">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-2">Why Choose Us?</h2>
+            <p className="text-gray-700 mb-12">
+              Here's how far we've come — backed by your trust and our wheels.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {/* Card 1 */}
+              <div className="text-center bg-white shadow rounded-lg p-6 border hover:-translate-y-2 hover:scale-105 hover:bg-gray-100">
+                <div className="bg-black text-white w-20 h-20 mx-auto rounded-md flex items-center justify-center mb-4">
+                  <MoveIcon size={32} />
+                </div>
+                <h4 className="font-semibold text-lg mb-2">
+                  Easy & Fast Booking
+                </h4>
+                <p className="text-gray-700">
+                  Completely carinate e business testing process whereas fully
+                  researched customer service. Globally extensive content with
+                  quality.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="text-center bg-white shadow rounded-lg p-6 border hover:translate-y-2 hover:scale-105 hover:bg-gray-100">
+                <div className="bg-black text-white w-20 h-20 mx-auto rounded-md flex items-center justify-center mb-4">
+                  <CrownIcon size={32} />
+                </div>
+                <h4 className="font-semibold text-lg mb-2">
+                  Many Pickup Location
+                </h4>
+                <p className="text-gray-700">
+                  Enthusiastically magnetic initiatives with cross-platform
+                  sources. Dynamically target testing procedures through
+                  effective.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="text-center bg-white shadow rounded-lg p-6 border hover:translate-y-2 hover:scale-105 hover:bg-gray-100">
+                <div className="bg-black text-white w-20 h-20 mx-auto rounded-md flex  items-center justify-center mb-4">
+                  <UserCheckIcon size={32} />
+                </div>
+                <h4 className="font-semibold text-lg mb-2">
+                  Customer Satisfaction
+                </h4>
+                <p className="text-gray-700">
+                  Globally user centric method interactive. Seamlessly
+                  revolutionize unique portals corporate collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What people Say about us */}
+        <section className="text-center py-16">
+          <div
+            id="default-carousel"
+            className="relative w-full bg-gradient-to-r from bg-gray-800 to-yellow-300"
+            data-carousel="slide"
+          >
+            <div className="max-w-6xl mx-auto px-4">
+              <h2 className="text-3xl font-bold mb-2">What People say about us?</h2>
+              <p className="text-black font-semibold mb-12">Every review is a story of trust, comfort, and great rides.</p>
+            </div>
+            {/* Carousel wrapper */}
+            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+              {/* Item 1 */}
+              <div
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/docs/images/carousel/carousel-1.svg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              {/* Item 2 */}
+              <div
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/docs/images/carousel/carousel-2.svg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              {/* Item 3 */}
+              <div
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/docs/images/carousel/carousel-3.svg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              {/* Item 4 */}
+              <div
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/docs/images/carousel/carousel-4.svg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              {/* Item 5 */}
+              <div
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/docs/images/carousel/carousel-5.svg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            {/* Slider indicators */}
+            <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+              {[0, 1, 2, 3, 4].map((index) => (
+                <button
+                  key={index}
+                  type="button"
+                  className="w-3 h-3 rounded-full"
+                  aria-current={index === 0 ? "true" : "false"}
+                  aria-label={`Slide ${index + 1}`}
+                  data-carousel-slide-to={index}
+                />
+              ))}
+            </div>
+
+            {/* Slider controls */}
+            <button
+              type="button"
+              className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span className="sr-only">Previous</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span className="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </section>
+
+        {/* Frequently asked questions */}
+        <section className="py-20 bg-gray-100 text-center">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="font-bold text-3xl mb-2">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-700 mb-12">
+              We understand that renting a car can raise a lot of questions—from
+              insurance coverage and fuel policies to pickup locations and
+              return flexibility. In this section, we've compiled answers to the
+              most commonly asked questions by our customers to help you book
+              with confidence. Whether you're renting for a day or a month,
+              we're here to make the process seamless and transparent.
+            </p>
+
+            </div>
         </section>
       </main>
     </>
