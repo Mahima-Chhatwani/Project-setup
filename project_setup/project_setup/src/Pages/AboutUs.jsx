@@ -1,8 +1,53 @@
-import React from "react";
+import React, {useState} from "react";
 import ourcompanyImg from "@/images/ourcompany.png";
 import { MapPin, CalendarCheck2, Car, MoveIcon, CrownIcon, UserCheckIcon } from "lucide-react";
 
+
+const accordionData =[
+    {id: 1, title: "1.What documents are required to rent a car?", content: "You need a valid driving license, a government-issued ID proof (like Aadhaar or passport), and a refundable security deposit." },
+    {id: 2, title: "2.What is the minimum age requirement to rent a car?", content: "The minimum age to rent a car is typically 21 years. Some premium cars may require the driver to be 25 years or older."},
+    {id: 3, title: "3.Can I book a car without creating an account?", content: "Yes, you can book as a guest, but creating an account allows you to track bookings, access offers, and manage your rentals easily." },
+    {id: 4, title: "4.Is fuel included in the rental price?", content: "No, fuel is not included. You will receive the car with a certain fuel level and are expected to return it with the same level."},
+    {id: 5, title: "5.Can I return the car at a different location?", content: "Yes, we offer one-way rentals between select locations for an additional fee. Please check availability while booking."},
+    {id: 6, title: "6.How can I pay for my car rental?", content: "We accept UPI, credit/debit cards, and major wallets like Paytm and PhonePe. Cash payments are accepted at select locations."},
+    {id: 7, title: "7.What happens if I return the car late?", content: "A late return fee will be charged based on the extra hours. We recommend informing customer support if you expect a delay."},
+    
+]
+
+
+function AccordionItem({title, content, isExpanded, onToggle}){
+    return(
+        <div className={`bg-white rounded-2xl overflow-hidden transition-all duration-300  ${
+            isExpanded ? "max-h-50" : "max-h-18"
+        }`}>
+            <div className="flex justify-between items-start p-6 cursor-pointer" onClick={onToggle}>
+             <div className="text-md font-bold">
+               {title}
+             </div>
+             < i className={`bx  bx-chevron-right text-4xl transition-all duration-300 ${
+                isExpanded ? "rotate-90" : ""
+             }`}  ></i> 
+            </div>
+
+            <div className={`px-5 pb-5 overflow-hidden transition-all duration-300 ${
+                isExpanded ? "opacity-100" : "opacity-0"
+            }`}>
+                <div>
+                     {content}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
 const AboutUs = () => {
+
+  const[expandedId, setExpandedId] = useState(null);
+      
+      const toggleExpand = (id) =>{
+          setExpandedId(expandedId === id ? null :id)
+      } 
     
   return (
     <>
@@ -275,139 +320,12 @@ const AboutUs = () => {
         </section>
 
         {/* What people Say about us */}
-        <section className="text-center py-16">
-          <div
-            id="default-carousel"
-            className="relative w-full bg-gradient-to-r from bg-gray-800 to-yellow-300"
-            data-carousel="slide"
-          >
-            <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-3xl font-bold mb-2">What People say about us?</h2>
-              <p className="text-black font-semibold mb-12">Every review is a story of trust, comfort, and great rides.</p>
-            </div>
-            {/* Carousel wrapper */}
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-              {/* Item 1 */}
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <img
-                  src="/docs/images/carousel/carousel-1.svg"
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-              {/* Item 2 */}
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <img
-                  src="/docs/images/carousel/carousel-2.svg"
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-              {/* Item 3 */}
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <img
-                  src="/docs/images/carousel/carousel-3.svg"
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-              {/* Item 4 */}
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <img
-                  src="/docs/images/carousel/carousel-4.svg"
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-              {/* Item 5 */}
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <img
-                  src="/docs/images/carousel/carousel-5.svg"
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-            </div>
-
-            {/* Slider indicators */}
-            <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-              {[0, 1, 2, 3, 4].map((index) => (
-                <button
-                  key={index}
-                  type="button"
-                  className="w-3 h-3 rounded-full"
-                  aria-current={index === 0 ? "true" : "false"}
-                  aria-label={`Slide ${index + 1}`}
-                  data-carousel-slide-to={index}
-                />
-              ))}
-            </div>
-
-            {/* Slider controls */}
-            <button
-              type="button"
-              className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev
-            >
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 1 1 5l4 4"
-                  />
-                </svg>
-                <span className="sr-only">Previous</span>
-              </span>
-            </button>
-
-            <button
-              type="button"
-              className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next
-            >
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-                <span className="sr-only">Next</span>
-              </span>
-            </button>
+        <section className="text-center  bg-gradient-to-r from-gray-800 to-yellow-300 py-16">
+          <div className="max-w-6xl mx-auto px-4 items-center justify-center">
+            <h2 className="font-bold text-3xl mb-2">What People say about us?</h2>
+            <p className="text-gray-800 mb-5">
+             Every review is a story of trust, comfort, and great rides.
+            </p>
           </div>
         </section>
 
@@ -417,7 +335,7 @@ const AboutUs = () => {
             <h2 className="font-bold text-3xl mb-2">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-700 mb-12">
+            <p className="text-gray-700 mb-5">
               We understand that renting a car can raise a lot of questions—from
               insurance coverage and fuel policies to pickup locations and
               return flexibility. In this section, we've compiled answers to the
@@ -425,6 +343,20 @@ const AboutUs = () => {
               with confidence. Whether you're renting for a day or a month,
               we're here to make the process seamless and transparent.
             </p>
+            <div>
+              <div className="min-h-screen flex items-center justify-center w-full ">
+            <div className="flex flex-col gap-3 max-w-fit mx-auto">
+              {accordionData.map((item)=>(
+                <AccordionItem 
+                key={item.id}
+                {...item}
+                 isExpanded={expandedId === item.id}
+                 onToggle={()=> toggleExpand(item.id)}
+                />
+              ))}
+            </div>
+        </div>
+            </div>
 
             </div>
         </section>

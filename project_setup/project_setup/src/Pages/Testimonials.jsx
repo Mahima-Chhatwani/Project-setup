@@ -1,7 +1,7 @@
 const Testimonials=()=>{
     return(
-        <div>
-          <h1>Review page</h1>
+        <div className="flex justify-center items-center h-screen ">
+          
         </div>
     )
 }
