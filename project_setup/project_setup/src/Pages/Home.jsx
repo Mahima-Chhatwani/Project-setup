@@ -656,7 +656,7 @@ const Home = () => {
           </h2>
           <p className="mb-6">Book a car with quent and travel worry-free</p>
           <Link
-            to="/listinggrid"
+            to="/bookings"
             className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded"
           >
             Book Now
