@@ -27,6 +27,7 @@ import RefundPolicy from "./Pages/RefundPolicy";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsConditions from "./Pages/TermsConditions";
 import Testimonials from "./Pages/Testimonials";
+import Invoice from "./Pages/Invoice";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="bookings" element={<Bookings />} />
+          <Route path="invoice" element= {<Invoice />}/>
           {/* Listing Dropdown */}
           <Route path="listinggrid" element={<ListingGrid/>}/>
           <Route path="listingdetails" element={<ListingDetails/>}/>

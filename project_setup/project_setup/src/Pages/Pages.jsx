@@ -9,6 +9,7 @@ function Pages() {
       <NavLink className="link" to="">About Us</NavLink> 
       <NavLink className="link" to="bookings">Bookings</NavLink> 
       <NavLink className="link" to="contact">Contact</NavLink>
+      <NavLink className="link" to="invoice">Invoice</NavLink>
       
       <Outlet />
     </div>

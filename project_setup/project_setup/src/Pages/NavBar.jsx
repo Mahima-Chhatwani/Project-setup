@@ -16,6 +16,7 @@ function NavBar() {
       { path: "/aboutus", label: "About Us" },
       { path: "/contact", label: "Contact" },
       { path: "/bookings", label: "Bookings" },
+      { path: "/invoice", label: "Invoice" },
     ],
     listings: [
       { path: "/listinggrid", label: "Listing Grid" },
