@@ -1,5 +1,110 @@
 import React from "react"
 import {Star, StarHalf, MapPin, Eye, CalendarCheck} from "lucide-react"
+import acuraSportImg from "@/images/acuraSport.png"
+import audiImg from "@/images/audi.png"
+import chevroletCamaroImg from "@/images/chevroletCamaro.png"
+import crossoverImg from "@/images/crossover.png"
+import ferrariSpecialeImg from "@/images/ferrariSpeciale.png"
+import fordMustangImg from "@/images/fordMustang.png"
+
+
+const recommendedCars = [
+    {
+        id: 1,
+        name:"Acura Sports",
+        location: "India",
+        price: 160,
+        image:acuraSportImg,
+        rating: 5.0,
+        review: 120,
+        transmission: "Auto" ,
+        mileage: "10km",
+        fuel: "Petrol",
+        seats:"5 Persons",
+        year: 2018,
+        topRated: "true",
+    },
+
+    {
+        id: 2,
+        name:"Audi",
+        location: "India",
+        price:180 ,
+        image:audiImg,
+        rating:5.0 ,
+        review: 100,
+        transmission:"Manual" ,
+        mileage: "15km",
+        fuel: "Petrol",
+        seats: "4 Persons",
+        year: 2016,
+        featured: "true",
+    },
+
+    {
+        id: 3,
+        name:"Chevrolet Camaro",
+        location: "India",
+        price: 80,
+        image:chevroletCamaroImg,
+        rating: 4.0,
+        review: 58,
+        transmission: "Manual",
+        mileage: "20km" ,
+        fuel: "Diesel" ,
+        seats:"5 Persons",
+        year: 2012,
+        featured: "true",
+    },
+
+    {
+        id: 4,
+        name:"Cross Over",
+        location: "India",
+        price: 36 ,
+        image:crossoverImg,
+        rating: 3.5,
+        review: 200,
+        transmission: "Äuto" ,
+        mileage: "18km" ,
+        fuel: "Petrol",
+        seats: "5 Persons",
+        year: 2015,
+        featured: "true" ,
+    },
+
+    {
+        id: 5,
+        name:"Ferrari Speciale",
+        location: "India",
+        price: 200,
+        image:ferrariSpecialeImg,
+        rating: 5.0,
+        review: 80,
+        transmission: "Äuto" ,
+        mileage: "12km",
+        fuel: "Petrol" ,
+        seats:"Petrol",
+        year:2019,
+        topRated:"true" ,
+    },
+
+    {
+        id: 5,
+        name:"Ford Mustang",
+        location: "India",
+        price: 150,
+        image:fordMustangImg,
+        rating: 4.5,
+        review: 90,
+        transmission: "Auto",
+        mileage:"15km" ,
+        fuel: "Petrol",
+        seats:"4 Persons",
+        year: 2018,
+        topRated: "true",
+    },
+]
 
 const ListingDetails =({car}) =>{
     if (!car) {
@@ -75,8 +180,52 @@ const ListingDetails =({car}) =>{
                 </button>
             </div>
         </section>
+
+
+        <section className="py-10">
+         <h2 className="text-2xl font-bold mb-6 text-gray-800">
+           You May be Interested in
+         </h2>
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+           {recommendedCars.map((car)=>(
+            <div key={car.id} className="border rounded-lg p-4 shadow-md bg-white relative">
+                {car.featured && (
+                    <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"> 
+                        Featured
+                        </div>
+                )}
+                     {car.topRated &&(
+                        <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                             Top Rated
+                            </div>
+                     )}
+                     <img 
+                     src={car.image}
+                     alt={car.name}
+                     className="w-full h-48 object-cover rounded"
+                     />
+                     <h3 className="font-bold text-lg mt-3 text-gray-900">{car.name}</h3>
+                     <p className="text-sm text-gray-600">
+                        ⭐{car.rating} ({car.review} Review )
+                     </p>
+                     <div className="text-sm text-gray-500 mt-2 space-y-1"> 
+                        <p>⚙️{car.transmission} | {car.mileage} | {car.fuel}</p>
+                        <p>👥{car.seats} | 📅{car.year}</p>
+                        <p>📍 {car.location}</p>
+                        </div>
+                        <p className="text-red-500 text-xl font-semibold mt-2">
+                            ${car.price}<span className="text-sm font-normal">/Day</span>
+                        </p>
+                        <button>
+                            📅 Rent Now
+                        </button>
+                 </div>
+           ))}
+         </div>
+        </section>
         </>
     )
 }
+
 
 export default ListingDetails
