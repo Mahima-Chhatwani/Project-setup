@@ -14,10 +14,54 @@ import UserDetails from "./Pages/UserDetails";
 import Register from "./Pages/Register";
 // import Dashboard from "./Pages/Dashboard";
 // import Blog from "./Pages/Blog";
+// User Dashboard
 import UserDashboard from "./Pages/UserDashboard";
+import MyBookings from "./Pages/MyBookings";
+import Reviews from "./Pages/Reviews";
+import Wishlist from "./Pages/Wishlist";
+import Messages from "./Pages/Messages";
+import MyWallet from "./Pages/MyWallet";
+import Payments from "./Pages/Payments";
+import Setting from "./Pages/Setting";
+import Security from "./Pages/Security";
+import Preferences from "./Pages/Preferences";
+import Notifications from "./Pages/Notifications";
+import Integration from "./Pages/Integration";
+// Admin Dashboard
 import AdminDashboard from "./Pages/AdminDashboard"
+import Reservations from "./Reservations";
+import Calendar from "./Pages/Calendar";
+import Quotations from "./Pages/Quotations";
+import Enquiries from "./Pages/Enquiries";
+import Locations from "./Pages/Locations";
+import Drivers from "./Pages/Drivers";
+import Customers from "./Pages/Customers";
+import Cars from "./Pages/Cars";
+import Features from "./Pages/Features";
+import Safety from "./Pages/Safety";
+import Doors from "./Pages/Doors";
+import Seats from "./Pages/Seats";
+import Cylinder from "./Pages/Cylinder";
+import Fuels from "./Pages/Fuels";
+import Colors from "./Pages/Colors";
+import Steering from "./Pages/Steering";
+import Models from "./Pages/Models";
+import Transmissions from "./Pages/Transmissions";
+import Types from "./Pages/Types";
+import Brands from "./Pages/Brands";
+import AdminReviews from "./Pages/AdminReviews";
+import Tracking from "./Pages/Tracking";
+import Maintainance from "./Pages/Maintainance";
+import Inspections from "./Pages/Inspections";
+import SeasonPricing from "./Pages/Seasonal-Pricing";
+import ExtraServices from "./Pages/Extra-Services";
+import AdminInvoices from "./Pages/AdminInvoice";
+import AdminPayments from "./Pages/AdminPayments";
+import AdminMessages from "./Pages/AdminMessages";
+import Coupons from "./Pages/Coupons";
+import NewsLetter from "./Pages/NewsLetter";
+// import ListingDetails from "./Pages/ListingDetails";
 import ListingGrid from "./Pages/ListingGrid";
-import ListingDetails from "./Pages/ListingDetails";
 import BlogGrid from "./Pages/BlogGrid";
 import BlogDetails from "./Pages/BlogDetails";
 import Footer from "./Pages/Footer";
@@ -55,10 +99,54 @@ function App() {
           <Route path="/privacypolicy" element={< PrivacyPolicy/>} />
           <Route path="/termsconditions" element={< TermsConditions/>}/>
           <Route path="/testimonials" element={<Testimonials/>}/>
+         
           
-          {/* Dashboard Dropdown */}
+          {/* User Dashboard Dropdown */}
           <Route path="userdashboard" element={<UserDashboard/>}/>
+          <Route path="mybookings" element={<MyBookings />}/>
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="wishlist" element={<Wishlist/>} />
+          <Route path="messages" element={<Messages/>} />
+          <Route path="mywallet" element={<MyWallet />} />
+          <Route path="payments" element={<Payments />} />
+          <Route path="setting" element={<Setting />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/preferences" element={<Preferences />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/integration" element={<Integration />} />
+
+          {/* Admin Dashboard Dropdown */}
           <Route path="admindashboard" element={<AdminDashboard/>}/>
+          <Route path="/reservations" element={<Reservations/>}/>
+          <Route path="/calendar" element={<Calendar/>}/>
+          <Route path="/quotations" element={<Quotations/>}/>
+          <Route path="/enquiries" element={<Enquiries/>}/>
+          <Route path="/customers" element={<Customers />}/>
+          <Route path="/drivers" element={<Drivers />}/>
+          <Route path="/locations" element={<Locations />}/>
+          <Route path="/cars" element={<Cars />}/>
+          <Route path="/features" element={<Features />}/>
+          <Route path="/safety" element={<Safety />}/>
+          <Route path="/doors" element={<Doors />}/>
+          <Route path="/seats" element={<Seats />}/>
+          <Route path="/cylinder" element={<Cylinder />}/>
+          <Route path="/fuels" element={<Fuels />}/>
+          <Route path="/colors" element={<Colors />}/>
+          <Route path="/steering" element={<Steering />}/>
+          <Route path="/models" element={<Models />}/>
+          <Route path="/transmissions" element={<Transmissions />}/>
+          <Route path="/types" element={<Types />}/>
+          <Route path="/adminreviews" element={<AdminReviews />}/>
+          <Route path="/tracking" element={<Tracking />}/>
+          <Route path="/maintainance" element={<Maintainance />}/>
+          <Route path="/inspections" element={<Inspections />}/>
+          <Route path="/seasonal-pricing" element={<SeasonPricing />}/>
+          <Route path="/extra-services" element={<ExtraServices />}/>
+          <Route path="/adminpayments" element={<AdminPayments />}/>
+          <Route path="/admininvoice" element={<AdminInvoices />}/>
+          <Route path="/newsletter" element={<NewsLetter/>}/>
+          <Route path="/coupons" element={<Coupons />}/>
+          <Route path="/adminmessages" element={<AdminMessages />}/>
           {/* Pages Dropdown */}
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
@@ -66,7 +154,7 @@ function App() {
           <Route path="invoice" element= {<Invoice />}/>
           {/* Listing Dropdown */}
           <Route path="listinggrid" element={<ListingGrid/>}/>
-          <Route path="listingdetails" element={<ListingDetails/>}/>
+          {/* <Route path="listingdetails" element={<ListingDetails/>}/> */}
           {/* Blog Dropdown */}
           <Route path="bloggrid" element={<BlogGrid/>}/>
           <Route path="blogdetails" element={<BlogDetails/>}/>

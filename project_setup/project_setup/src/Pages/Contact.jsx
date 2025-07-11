@@ -3,11 +3,12 @@ import { Input} from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import {Textarea} from "@/components/ui/textarea"
 import{Phone, Mail, MapPin, Clock} from "lucide-react"
+import { Link } from "react-router-dom"
 
 const contactInfo = [
     {
         icon: <Phone className="h-6 w-6 text-white" />,
-        title: "Phone Number",
+        title: <Link to="/admindashboard">"Phone Number"</Link>,
         info:  "1234567890"
     },
     {
