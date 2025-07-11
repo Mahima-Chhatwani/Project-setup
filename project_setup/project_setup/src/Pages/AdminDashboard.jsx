@@ -127,7 +127,7 @@ const AdminDashboard = ()=>{
              </SidebarItem>
              <SidebarLink to="/admintestimonials">Testimonials</SidebarLink>
              <SidebarItem icon={FileQuestion} title="FAQ">
-            <SidebarLink to="/adminfaq">FAQ</SidebarLink>
+            <SidebarLink to="/adminfaq">AdminFAQ</SidebarLink>
             <SidebarLink to="/faqcategory">FAQ Category</SidebarLink>
              </SidebarItem>
 
@@ -158,7 +158,7 @@ const AdminDashboard = ()=>{
 
              {/* Authentication */}
              <p className="text-xs text-gray-400 font-medium px-4 mt-6 mb-2">AUTHENTICATION</p>
-             <SidebarLink to="/adminlogin">Login</SidebarLink>
+             <SidebarLink to="/adminlogin">AdminLogin</SidebarLink>
              <SidebarLink to="/password">Forgot Password</SidebarLink>
              <SidebarLink to="/verification">Email Verification</SidebarLink>
              <SidebarLink to="/reset">Reset Password</SidebarLink>
@@ -168,15 +168,15 @@ const AdminDashboard = ()=>{
              {/* Settings & Configurations */}
              <p className="text-xs text-gray-400 font-medium px-4 mt-6 mb-2">SETTINGS & CONFIGURATIONS</p>
              <SidebarItem icon={PersonStanding} title="Account Settings">
-                <SidebarLink to="/adminprofile">Profile</SidebarLink>
-                <SidebarLink to="/adminsecurity">Security</SidebarLink>
-                <SidebarLink to="/adminnotification">Notifications</SidebarLink>
-                <SidebarLink to="/adminintegration">Integrations</SidebarLink>
+                <SidebarLink to="/adminprofile">AdminProfile</SidebarLink>
+                <SidebarLink to="/adminsecurity">AdminSecurity</SidebarLink>
+                <SidebarLink to="/adminnotification">AdminNotification</SidebarLink>
+                <SidebarLink to="/adminintegration">AdminIntegration</SidebarLink>
                 <SidebarLink to="/tracker">Tracker</SidebarLink>
                 </SidebarItem>
 
                 <SidebarItem icon={Clock} title="Rental Settings">
-                <SidebarLink to="/rental">Rental</SidebarLink>
+                <SidebarLink to="/rentalsettings">RentalSettings</SidebarLink>
                 <SidebarLink to="/insaurance">Insaurance</SidebarLink>
                 </SidebarItem>
 

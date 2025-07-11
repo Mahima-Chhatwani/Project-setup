@@ -60,6 +60,35 @@ import AdminPayments from "./Pages/AdminPayments";
 import AdminMessages from "./Pages/AdminMessages";
 import Coupons from "./Pages/Coupons";
 import NewsLetter from "./Pages/NewsLetter";
+import Cities from "./Pages/Cities";
+import States from "./Pages/States";
+import Countries from "./Pages/Countries";
+import FAQCategory from "./Pages/FAQCategory";
+import AdminFAQ from "./Pages/AdminFAQ";
+import AdminTestimonials from "./Pages/AdminTestimonials";
+import Announcements from "./Pages/Announcements";
+import ContactMessages from "./Pages/ContactMessages";
+import Tickets from "./Pages/Tickets";
+import AdminUsers from "./Pages/AdminUsers";
+import RolesPermissions from "./Pages/RolesPermissions";
+import Rentals from "./Pages/Rentals";
+import Earnings from "./Pages/Earnings";
+import Income from "./Pages/Income";
+import Password from "./Pages/Password";
+import AdminLogin from "./Pages/AdminLogin";
+import Reset from "./Pages/Reset";
+import Verification from "./Pages/Verification";
+import Tracker from "./Pages/Tracker";
+import AdminIntegration from "./Pages/AdminIntegration";
+import AdminNotification from "./Pages/AdminNotification";
+import AdminSecurity from "./Pages/AdminSecurity";
+import AdminProfile from "./Pages/AdminProfile";
+import RentalSettings from "./Pages/RentalSettings";
+import Insaurance from "./Pages/Insaurance";
+import BankAccount from "./Pages/BankAccount";
+import Currencies from "./Pages/Currencies";
+import Tax from "./Pages/Tax";
+import PaymentMethods from "./Pages/PaymentMethods";
 // import ListingDetails from "./Pages/ListingDetails";
 import ListingGrid from "./Pages/ListingGrid";
 import BlogGrid from "./Pages/BlogGrid";
@@ -72,6 +101,11 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsConditions from "./Pages/TermsConditions";
 import Testimonials from "./Pages/Testimonials";
 import Invoice from "./Pages/Invoice";
+
+
+
+
+
 
 function App() {
   return (
@@ -147,6 +181,35 @@ function App() {
           <Route path="/newsletter" element={<NewsLetter/>}/>
           <Route path="/coupons" element={<Coupons />}/>
           <Route path="/adminmessages" element={<AdminMessages />}/>
+          <Route path="/cities" element={<Cities />}/>
+          <Route path="/states" element={<States />}/>
+          <Route path="/countries" element={<Countries />}/>
+          <Route path="/faqcategory" element={<FAQCategory />}/>
+          <Route path="/adminfaq" element={<AdminFAQ />}/>
+          <Route path="/admintestimonials" element={<AdminTestimonials />}/>
+          <Route path="/tickets" element={<Tickets />}/>
+          <Route path="/announcements" element={<Announcements />}/>
+          <Route path="/contactmessages" element={<ContactMessages />}/>
+          <Route path="/roles" element={<RolesPermissions />}/>
+          <Route path="/adminusers" element={<AdminUsers />}/>
+          <Route path="/rentals" element={<Rentals />}/>
+          <Route path="/earnings" element={<Earnings />}/>
+          <Route path="/income" element={<Income />}/>
+          <Route path="/reset" element={<Reset />}/>
+          <Route path="/verification" element={<Verification />}/>
+          <Route path="/password" element={<Password />}/>
+          <Route path="/adminlogin" element={<AdminLogin />}/>
+          <Route path="/tracker" element={<Tracker />}/>
+          <Route path="/adminintegration" element={<AdminIntegration />}/>
+          <Route path="/adminnotification" element={<AdminNotification />}/>
+          <Route path="/adminsecurity" element={<AdminSecurity />}/>
+          <Route path="/adminprofile" element={<AdminProfile />}/>
+          <Route path="/rentalsettings" element={<RentalSettings />}/>
+          <Route path="/insaurance" element={<Insaurance />}/>
+          <Route path="/bankaccount" element={<BankAccount />}/>
+          <Route path="/currencies" element={<Currencies />}/>
+          <Route path="/tax" element={<Tax />}/>
+          <Route path="/paymentmethods" element={<PaymentMethods />}/>
           {/* Pages Dropdown */}
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
